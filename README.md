@@ -7,7 +7,7 @@ More scripts will potentially be added in the future.
 
 **Catalog page sorter**:
 
-The catalog page sorter script, will sort your catalog in alphabtical order, while allowing you to specify what pages to exclude from the sorting.
+The catalog page sorter script, will sort your catalog in alphabetical order, while allowing you to specify what pages to exclude from the sorting.
 
 You can choose to either run the .SQL version or the PHP version, the outcome will be the same.
 
