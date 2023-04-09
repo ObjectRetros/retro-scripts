@@ -14,7 +14,7 @@ To run the script, simply download or clone the file, edit the database credenti
 
 **Important**
 
-Make sure to always backup your database before running scripts, in-case something unforseen happens.
+Make sure to always backup your database before running scripts, in-case something unforseen happens - Using any of the script is on your own responsibility.
 
 **Contributions**
 
