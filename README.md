@@ -11,6 +11,8 @@ The catalog page sorter script, will sort your catalog in alphabtical order, whi
 
 To run the script, simply download or clone the file, edit the database credentials to match your database, once the database credentials has been setup, you open your CMD (Command prompt) browse into the folder your file is stored at and then run ``php catalog-page-sorter.php``. The script will then run and let you know once it's finished. After finishing, head into your hotel and do ``:update_catalog``.
 
+You can also simply use the SQL version of the catalog page sorter, the outcome will be the same. 
+
 
 **Important**
 
