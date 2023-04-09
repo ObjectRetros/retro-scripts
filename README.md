@@ -15,3 +15,7 @@ To run the script, simply download or clone the file, edit the database credenti
 **Important**
 
 Make sure to always backup your database before running scripts, in-case something unforseen happens.
+
+**Contributions**
+
+Any contributions is much appreciated, so in-case you have a script you think that'd be useful to the public, feel free to create a pull request, explaining what your script does, and why it's useful.
