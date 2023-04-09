@@ -7,7 +7,7 @@ $database = "database_name";
 
 // Pages with the parent id's specified below, will be excluded from the sorting
 $excludePages = [
-    // Your catalog page IDs to exclude from the sorting. Eg. catalog tabs etc. separate them by commas. - Eg. 1,2,3,4,5,6
+    -1, // Your catalog page IDs to exclude from the sorting. Eg. catalog tabs etc. separate them by commas. - Eg. 1,2,3,4,5,6
 ];
 
 $excludePages = implode(',', $excludePages);
