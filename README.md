@@ -23,6 +23,8 @@ The furniture fixer will loop through Habbos furnidata and update the width, len
 
 To run the PHP script, simply download or clone the file, edit the database credentials to match your database, once the database credentials has been setup, you open your CMD (Command prompt) browse into the folder your file is stored at and then run ``php furniture-fixer.php``. The script will then run and let you know once it's finished.
 
+After the script has run, head into your hotel and do ``:update_items`` and potentially reload  the active rooms to reload their data.
+
 
 **Important**
 
