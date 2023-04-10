@@ -1,6 +1,8 @@
 # Retro scripts
 
-The scripts inside this repository is purely script I once had use for, that also could be useful to the public, to ease the process of improving your hotel.
+**Disclaimer**
+
+Those scripts is for educational purpose only. I am not responsible for how or where those scripts are being used
 
 More scripts will potentially be added in the future.
 
@@ -33,6 +35,3 @@ Make sure to always backup your database before running scripts, in-case somethi
 **Contributions**
 
 Any contributions is much appreciated, so in-case you have a script you think that'd be useful to the public, feel free to create a pull request, explaining what your script does, and why it's useful.
-
-**Disclaimer**
-Those scripts is for educational purpose only. I am not responsible for how or where those scripts are being used
