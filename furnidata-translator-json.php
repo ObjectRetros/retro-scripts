@@ -38,33 +38,25 @@ if (json_last_error() != JSON_ERROR_NONE) {
     return "Error decoding JSON data: " . json_last_error_msg();
 }
 
-$localRoomItems = $localDecodedData['roomitemtypes']['furnitype'];
-$localWallItems = $localDecodedData['wallitemtypes']['furnitype'];
+$localItems = [
+    'roomitemtypes' => $localDecodedData['roomitemtypes']['furnitype'],
+    'wallitemtypes' => $localDecodedData['wallitemtypes']['furnitype']
+];
 
-$remoteRoomItems = $remoteDecodedData['roomitemtypes']['furnitype'];
-$remoteWallItems = $remoteDecodedData['wallitemtypes']['furnitype'];
+$remoteItems = [
+    'roomitemtypes' => $remoteDecodedData['roomitemtypes']['furnitype'],
+    'wallitemtypes' => $remoteDecodedData['wallitemtypes']['furnitype']
+];
 
-foreach ($remoteRoomItems as $remoteItem) {
-    $remoteClassname = $remoteItem['classname'] ?? '';
-    $remoteName = $remoteItem['name'] ?? '';
-    $remoteDescription = $remoteItem['description'] ?? '';
-
-    // Find the index of the matching classname in the localRoomItems array
-    $index = array_search($remoteClassname, array_map(function ($item) {
-        return $item['classname'] ?? '';
-    }, $localRoomItems));
-
-    // Update the name and description if a match is found
-    if ($index !== false) {
-        $localRoomItems[$index]['name'] = $remoteName;
-        $localRoomItems[$index]['description'] = $remoteDescription;
-
-        echo "\n" . $localRoomItems[$index]['classname'] . ' has been updated';
+foreach ($remoteItems as $itemType => $items) {
+    foreach ($items as $remoteItem) {
+        updateLocalItems($remoteItem, $localItems, $itemType);
     }
 }
 
 // Update the local furnidata with the new data
-$localDecodedData['roomitemtypes']['furnitype'] = $localRoomItems;
+$localDecodedData['roomitemtypes']['furnitype'] = $localItems['roomitemtypes'];
+$localDecodedData['wallitemtypes']['furnitype'] = $localItems['wallitemtypes'];
 
 // Encode the updated local data as JSON
 $updatedLocalData = json_encode($localDecodedData, JSON_PRETTY_PRINT);
@@ -74,4 +66,25 @@ if (file_put_contents($localFurnidataPath, $updatedLocalData) === false) {
     return "Failed to save the updated local furnidata.\n";
 }
 
+
 echo "\n\nFinished translating";
+
+// Helper function
+function updateLocalItems($remoteItem, &$localItems, $itemType) {
+    $remoteClassname = $remoteItem['classname'] ?? '';
+    $remoteName = $remoteItem['name'] ?? '';
+    $remoteDescription = $remoteItem['description'] ?? '';
+
+    // Find the index of the matching classname in the localItems array
+    $index = array_search($remoteClassname, array_map(function ($item) {
+        return $item['classname'] ?? '';
+    }, $localItems[$itemType]));
+
+    // Update the name and description if a match is found
+    if ($index !== false) {
+        $localItems[$itemType][$index]['name'] = $remoteName;
+        $localItems[$itemType][$index]['description'] = $remoteDescription;
+
+        echo "\n" . $localItems[$itemType][$index]['classname'] . ' has been updated';
+    }
+}
