@@ -2,7 +2,9 @@
 
 **Disclaimer**
 
-Those scripts is for educational purpose only. I am not responsible for how or where those scripts are being used
+Those scripts is for educational purpose only. I am not responsible for how or where those scripts are being used.
+
+**Future scripts**
 
 More scripts will potentially be added in the future.
 
