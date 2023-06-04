@@ -38,6 +38,17 @@ To run the PHP script, simply download or clone the file, edit the database cred
 After the script has run, replace your furnidata with the updated one and then clear cache & reload.
 
 
+**Import cloudflare IPs script**
+This script will import all the IPs from https://www.cloudflare.com/ips-v4 & https://www.cloudflare.com/ips-v6 both to your IIS and to your firewall, this will ensure that only traffic proxied through cloudflare will be allowed - This essentially helps a bit in regards to DDoS attacks.
+
+To run the script do the following:
+1. Open powershell as administrator (right click it and then select "Run as Administrator")
+2. "cd" into the folder where your script is located
+3. Execute it by running ./Import-CloudflareIPs.ps1 
+4. Once it's finished open IIS & advanced firewall & security to verify the IPs has been imported correctly
+5. In IIS domain & restriction click on ""Edit Feature Settings..." set "Access for unspecified clients" to "Deny", toggle "Enable domain name restrictions" and then lastly "Deny Action type" should be set to "Abort" hit ok
+6. Restart IIS 
+
 **Important**
 
 Make sure to always backup your database before running scripts, in-case something unforseen happens - Using any of the script is on your own responsibility.
