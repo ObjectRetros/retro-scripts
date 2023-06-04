@@ -33,7 +33,7 @@ After the script has run, head into your hotel and do ``:update_items`` and pote
 
 The furnidata translator will loop through the provided furnidata url and update the name and description entries for each furniture it can matchup against in your local furnidata.
 
-To run the PHP script, simply download or clone the file, edit the database credentials to match your database, once the database credentials has been setup, you open your CMD (Command prompt) browse into the folder your file is stored at and then run ``php furnidata-translator-json.php``. The script will then run through the entire furnidata updating any name and description where it can find a match, based on the classname. Before running the script will create a local backup of your local furnidata, in-case you need to reference or restore it. The script will let you know once it's finished.
+To run the PHP script, simply download or clone the file, edit the database credentials to match your database, once the database credentials has been setup, you open your CMD (Command prompt) browse into the folder your file is stored at and then run ``php furnidata-translator-json.php`` or ``php furnidata-translator-xml.php``. The script will then run through the entire furnidata updating any name and description where it can find a match, based on the classname. Before running the script will create a local backup of your local furnidata, in-case you need to reference or restore it. The script will let you know once it's finished.
 
 After the script has run, replace your furnidata with the updated one and then clear cache & reload.
 
