@@ -39,6 +39,7 @@ After the script has run, replace your furnidata with the updated one and then c
 
 
 **Import cloudflare IPs script**
+
 This script will import all the IPs from https://www.cloudflare.com/ips-v4 & https://www.cloudflare.com/ips-v6 both to your IIS and to your firewall, this will ensure that only traffic proxied through cloudflare will be allowed - This essentially helps a bit in regards to DDoS attacks.
 
 To run the script do the following:
