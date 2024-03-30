@@ -2,12 +2,12 @@
 
 Please note that the files is provided as an educational resource for learning purposes only. The creators and contributors to those files are not responsible for any misuse or unintended consequences arising from the use of the files. By using those files, you agree to take full responsibility for your actions and any consequences resulting from your use of the files. It is your responsibility to ensure that you are using the files in compliance with all applicable laws and regulations.
 
-**Future scripts**
+#### Future scripts
 
 More scripts will potentially be added in the future.
 
 
-**Catalog page sorter**:
+#### Catalog page sorter
 
 The catalog page sorter script, will sort your catalog in alphabetical order, while allowing you to specify what pages to exclude from the sorting.
 
@@ -19,7 +19,7 @@ To run the PHP script, simply download or clone the file, edit the database cred
 
 After the script has run, head into your hotel and do ``:update_catalog``
 
-**Catalog page caption translator**:
+#### Catalog page caption translator
 
 If you wish to translate all of your catalog captions into a different language than provided, then you can use the `catalog-caption-translator.php` script.
 
@@ -27,7 +27,7 @@ This script will use DeepL to translate all the captions within your catalog.
 
 To use the script you msut head to [https://www.deepl.com/pro-api?cta=header-pro-api](https://www.deepl.com/pro-api?cta=header-pro-api) to obtain a free API key and paste it within the `API_KEY` difinition in the script.
 
-**Furniture fixer**
+#### Furniture fixer
 
 The furniture fixer will loop through Habbos furnidata and update the width, length, can_sit, can_walk & can_sit entries for each furniture it can matchup against (room items only).
 
@@ -35,7 +35,7 @@ To run the PHP script, simply download or clone the file, edit the database cred
 
 After the script has run, head into your hotel and do ``:update_items`` and potentially reload  the active rooms to reload their data.
 
-**Furnidata translator**
+#### Furnidata translator
 
 The furnidata translator will loop through the provided furnidata url and update the name and description entries for each furniture it can matchup against in your local furnidata.
 
@@ -44,7 +44,7 @@ To run the PHP script, simply download or clone the file, edit the database cred
 After the script has run, replace your furnidata with the updated one and then clear cache & reload.
 
 
-**Import cloudflare IPs script**
+#### Import cloudflare IPs script
 
 This script will import all the IPs from https://www.cloudflare.com/ips-v4 & https://www.cloudflare.com/ips-v6 both to your IIS and to your firewall, this will ensure that only traffic proxied through cloudflare will be allowed - This essentially helps a bit in regards to DDoS attacks.
 
@@ -56,15 +56,13 @@ To run the script do the following:
 5. In IIS domain & restriction click on ``Edit Feature Settings...`` set ``Access for unspecified clients`` to ``Deny``, toggle ``Enable domain name restrictions`` and then lastly ``Deny Action type`` should be set to ``Abort``, then click "ok"
 6. Restart IIS 
 
-**Important**
+### Important
 
 Make sure to always backup your database before running scripts, in-case something unforseen happens - Using any of the script is on your own responsibility.
 
-**Contributions**
+### Contributions
 
 Any contributions is much appreciated, so in-case you have a script you think that'd be useful to the public, feel free to create a pull request, explaining what your script does, and why it's useful.
-
-
 
 ### 🙏 Donations
 If you wish to support my work, you can click the button below to "buy me a coffee" it's also possible to create a "subscription" where you'd support me with a coffee every month
