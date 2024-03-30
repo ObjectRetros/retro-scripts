@@ -20,6 +20,7 @@ To run the PHP script, simply download or clone the file, edit the database cred
 After the script has run, head into your hotel and do ``:update_catalog``
 
 **Catalog page caption translator**:
+
 If you wish to translate all of your catalog captions into a different language than provided, then you can use the `catalog-caption-translator.php` script.
 
 This script will use DeepL to translate all the captions within your catalog.
