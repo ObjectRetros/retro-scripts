@@ -1,9 +1,3 @@
-### 🙏 Donations
-If you wish to support my work, you can click the button below to "buy me a coffee" it's also possible to create a "subscription" where you'd support me with a coffee every month
-
-<a href="https://www.buymeacoffee.com/dennisobject" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-
-
 ### 📢 Disclaimer
 
 Please note that the files is provided as an educational resource for learning purposes only. The creators and contributors to those files are not responsible for any misuse or unintended consequences arising from the use of the files. By using those files, you agree to take full responsibility for your actions and any consequences resulting from your use of the files. It is your responsibility to ensure that you are using the files in compliance with all applicable laws and regulations.
@@ -24,6 +18,13 @@ You can choose to either run the .SQL version or the PHP version, the outcome wi
 To run the PHP script, simply download or clone the file, edit the database credentials to match your database, once the database credentials has been setup, you open your CMD (Command prompt) browse into the folder your file is stored at and then run ``php catalog-page-sorter.php``. The script will then run and let you know once it's finished.
 
 After the script has run, head into your hotel and do ``:update_catalog``
+
+**Catalog page caption translator**:
+If you wish to translate all of your catalog captions into a different language than provided, then you can use the `catalog-caption-translator.php` script.
+
+This script will use DeepL to translate all the captions within your catalog.
+
+To use the script you msut head to [https://www.deepl.com/pro-api?cta=header-pro-api](https://www.deepl.com/pro-api?cta=header-pro-api) to obtain a free API key and paste it within the `API_KEY` difinition in the script.
 
 **Furniture fixer**
 
@@ -61,3 +62,11 @@ Make sure to always backup your database before running scripts, in-case somethi
 **Contributions**
 
 Any contributions is much appreciated, so in-case you have a script you think that'd be useful to the public, feel free to create a pull request, explaining what your script does, and why it's useful.
+
+
+
+### 🙏 Donations
+If you wish to support my work, you can click the button below to "buy me a coffee" it's also possible to create a "subscription" where you'd support me with a coffee every month
+
+<a href="https://www.buymeacoffee.com/dennisobject" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
